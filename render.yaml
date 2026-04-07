@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: arkenza-health-ai
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: GEMINI_API_KEY
+        sync: false
